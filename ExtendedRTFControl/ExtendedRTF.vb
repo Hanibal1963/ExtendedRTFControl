@@ -41,7 +41,7 @@ Namespace ExtendedRTFControl
     <ProvideToolboxControlAttribute("SchlumpfSoft Controls", False)>
     <System.ComponentModel.Description("Erweiterte RichTextBox mit bequemen Formatierungs- und Abfrage-Hilfen für Auswahl und Caret (u.a. Schriftgröße, Stil-Flags, Vorder-/Hintergrundfarbe, Absatz-Einzüge, Ausrichtung) sowie Batch-Updates über Redraw-Suppression.")>
     <System.ComponentModel.ToolboxItem(True)>
-    <System.Drawing.ToolboxBitmap(GetType(ExtendedRTF), "ExtendedRTF.bmp")>
+    <System.Drawing.ToolboxBitmap(GetType(ExtendedRTF), "ExtendedRTFControl.ExtendedRTF.bmp")>
     Public Class ExtendedRTF
 
 #Region "Variablen"
@@ -65,12 +65,6 @@ Namespace ExtendedRTFControl
         ''' <see cref="System.Nullable(Of Single)"/>: Konkreter Wert oder <see
         ''' langword="Nothing"/> bei Mischzustand.
         ''' </value>
-        ''' <example>
-        ''' Ausgewählte Zeichen auf 14pt setzen: <code><![CDATA[Dim rtf As New ExtendedRTFControl.ExtendedRTF()
-        ''' rtf.Text = "Beispieltext"
-        ''' rtf.Select(0, 5)
-        ''' rtf.SelectionFontSize = 14.0F]]></code>
-        ''' </example>
         <System.ComponentModel.Browsable(False)>
         Public Property SelectionFontSize As System.Nullable(Of Single)
             Get
@@ -102,12 +96,6 @@ Namespace ExtendedRTFControl
         ''' <see cref="System.Nullable(Of Boolean)"/>: <see langword="True"/> oder <see
         ''' langword="False"/>, bzw. <see langword="Nothing"/> bei Mischzustand.
         ''' </value>
-        ''' <example>
-        ''' Fettdruck für die komplette Auswahl aktivieren: <code><![CDATA[Dim rtf As New ExtendedRTFControl.ExtendedRTF()
-        ''' rtf.Text = "Fett markieren"
-        ''' rtf.Select(0, rtf.TextLength)
-        ''' rtf.SelectionBold = True]]></code>
-        ''' </example>
         <System.ComponentModel.Browsable(False)>
         Public Property SelectionBold As System.Nullable(Of Boolean)
             Get
@@ -135,12 +123,6 @@ Namespace ExtendedRTFControl
         ''' <see cref="System.Nullable(Of Boolean)"/>: <see langword="True"/> oder <see
         ''' langword="False"/>, bzw. <see langword="Nothing"/> bei Mischzustand.
         ''' </value>
-        ''' <example>
-        ''' Kursiv für ein Wort einschalten: <code><![CDATA[Dim rtf As New ExtendedRTFControl.ExtendedRTF()
-        ''' rtf.Text = "kursives Wort"
-        ''' rtf.Select(9, 4) ' "Wort"
-        ''' rtf.SelectionItalic = True]]></code>
-        ''' </example>
         <System.ComponentModel.Browsable(False)>
         Public Property SelectionItalic As System.Nullable(Of Boolean)
             Get
@@ -168,12 +150,6 @@ Namespace ExtendedRTFControl
         ''' <see cref="System.Nullable(Of Boolean)"/>: <see langword="True"/> oder <see
         ''' langword="False"/>, bzw. <see langword="Nothing"/> bei Mischzustand.
         ''' </value>
-        ''' <example>
-        ''' Unterstreichung für die ersten Zeichen aktivieren: <code><![CDATA[Dim rtf As New ExtendedRTFControl.ExtendedRTF()
-        ''' rtf.Text = "unterstrichener Anfang"
-        ''' rtf.Select(0, 12)
-        ''' rtf.SelectionUnderline = True]]></code>
-        ''' </example>
         <System.ComponentModel.Browsable(False)>
         Public Property SelectionUnderline As System.Nullable(Of Boolean)
             Get
@@ -201,12 +177,6 @@ Namespace ExtendedRTFControl
         ''' <see cref="System.Nullable(Of Boolean)"/>: <see langword="True"/> oder <see
         ''' langword="False"/>, bzw. <see langword="Nothing"/> bei Mischzustand.
         ''' </value>
-        ''' <example>
-        ''' Durchstreichung für einen Bereich aktivieren: <code><![CDATA[Dim rtf As New ExtendedRTFControl.ExtendedRTF()
-        ''' rtf.Text = "durchgestrichener Teil"
-        ''' rtf.Select(0, 17)
-        ''' rtf.SelectionStrikeout = True]]></code>
-        ''' </example>
         <System.ComponentModel.Browsable(False)>
         Public Property SelectionStrikeout As System.Nullable(Of Boolean)
             Get
@@ -235,12 +205,6 @@ Namespace ExtendedRTFControl
         ''' <value>
         ''' <see cref="System.Drawing.Color"/> der Auswahl bzw. am Caret.
         ''' </value>
-        ''' <example>
-        ''' Textfarbe der Auswahl auf Dunkelblau setzen: <code><![CDATA[Dim rtf As New ExtendedRTFControl.ExtendedRTF()
-        ''' rtf.Text = "farbiger Text"
-        ''' rtf.Select(0, rtf.TextLength)
-        ''' rtf.SelectionForeColor = System.Drawing.Color.DarkBlue]]></code>
-        ''' </example>
         <System.ComponentModel.Browsable(False)>
         Public Property SelectionForeColor As System.Drawing.Color
             Get
@@ -263,12 +227,6 @@ Namespace ExtendedRTFControl
         ''' <value>
         ''' <see cref="System.Drawing.Color"/> der Markierung/Hinterlegung.
         ''' </value>
-        ''' <example>
-        ''' Hintergrundfarbe der Auswahl auf Hellgelb setzen: <code><![CDATA[Dim rtf As New ExtendedRTFControl.ExtendedRTF()
-        ''' rtf.Text = "markierter Hintergrund"
-        ''' rtf.Select(0, rtf.TextLength)
-        ''' rtf.SelectionBackColor = System.Drawing.Color.LightYellow]]></code>
-        ''' </example>
         <System.ComponentModel.Browsable(False)>
         Public Overloads Property SelectionBackColor As System.Drawing.Color
             Get
@@ -292,12 +250,6 @@ Namespace ExtendedRTFControl
         ''' <see cref="System.Nullable(Of System.Int32)"/>: konkreter Einzug oder <see
         ''' langword="Nothing"/> bei Mischzustand.
         ''' </value>
-        ''' <example>
-        ''' Linken Einzug des aktuellen Absatzes auf 24 Pixel setzen: <code><![CDATA[Dim rtf As New ExtendedRTFControl.ExtendedRTF()
-        ''' rtf.Text = "Absatz mit Einzug"
-        ''' rtf.Select(0, 0) ' Caret im Absatz
-        ''' rtf.SelectionLeftIndent = 24]]></code>
-        ''' </example>
         <System.ComponentModel.Browsable(False)>
         Public Property SelectionLeftIndent As System.Nullable(Of System.Int32)
             Get

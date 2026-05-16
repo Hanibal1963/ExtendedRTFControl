@@ -29,18 +29,18 @@ Partial Class FormMain
         Me.ToolStripButton_Italic = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton_UnderLine = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton_Strikeout = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripButton_ToggleBullets = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripButton_FontFormat = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton_FontSizeUp = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton_FontSizeDown = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton_ForeColor = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton_BackColor = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton_DelFormat = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripButton_ToggleBullets = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton_LeftIndentUp = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton_LeftIndentDown = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton_TextLeft = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton_TextCenter = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton_TextRight = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripButton_FontFormat = New System.Windows.Forms.ToolStripButton()
         Me.TableLayoutPanel.SuspendLayout()
         Me.ToolStrip_Format.SuspendLayout()
         Me.SuspendLayout()
@@ -126,15 +126,15 @@ Partial Class FormMain
         Me.ToolStripButton_Strikeout.Text = "ToolStripButton_Strikeout"
         Me.ToolStripButton_Strikeout.ToolTipText = "Markierung durchgestrichen formatieren"
         '
-        'ToolStripButton_ToggleBullets
+        'ToolStripButton_FontFormat
         '
-        Me.ToolStripButton_ToggleBullets.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton_ToggleBullets.Image = Global.ExtendedRTFControlTest.My.Resources.Resources.Togglebullets
-        Me.ToolStripButton_ToggleBullets.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton_ToggleBullets.Name = "ToolStripButton_ToggleBullets"
-        Me.ToolStripButton_ToggleBullets.Size = New System.Drawing.Size(23, 22)
-        Me.ToolStripButton_ToggleBullets.Text = "ToolStripButton_ToggleBullets"
-        Me.ToolStripButton_ToggleBullets.ToolTipText = "Bullets der Markierung umschalten"
+        Me.ToolStripButton_FontFormat.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton_FontFormat.Image = Global.ExtendedRTFControlTest.My.Resources.Resources.Fontformat
+        Me.ToolStripButton_FontFormat.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton_FontFormat.Name = "ToolStripButton_FontFormat"
+        Me.ToolStripButton_FontFormat.Size = New System.Drawing.Size(23, 22)
+        Me.ToolStripButton_FontFormat.Text = "ToolStripButton_FontFormat"
+        Me.ToolStripButton_FontFormat.ToolTipText = "Schriftart für Markierung auswählen"
         '
         'ToolStripButton_FontSizeUp
         '
@@ -186,6 +186,16 @@ Partial Class FormMain
         Me.ToolStripButton_DelFormat.Text = "ToolStripButton_DelFormat"
         Me.ToolStripButton_DelFormat.ToolTipText = "Formatierung der Markierung entfernen"
         '
+        'ToolStripButton_ToggleBullets
+        '
+        Me.ToolStripButton_ToggleBullets.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton_ToggleBullets.Image = Global.ExtendedRTFControlTest.My.Resources.Resources.Togglebullets
+        Me.ToolStripButton_ToggleBullets.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton_ToggleBullets.Name = "ToolStripButton_ToggleBullets"
+        Me.ToolStripButton_ToggleBullets.Size = New System.Drawing.Size(23, 22)
+        Me.ToolStripButton_ToggleBullets.Text = "ToolStripButton_ToggleBullets"
+        Me.ToolStripButton_ToggleBullets.ToolTipText = "Bullets der Markierung umschalten"
+        '
         'ToolStripButton_LeftIndentUp
         '
         Me.ToolStripButton_LeftIndentUp.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
@@ -235,16 +245,6 @@ Partial Class FormMain
         Me.ToolStripButton_TextRight.Size = New System.Drawing.Size(23, 22)
         Me.ToolStripButton_TextRight.Text = "ToolStripButton_TextRight"
         Me.ToolStripButton_TextRight.ToolTipText = "Markierung Rechtsbündig formatieren"
-        '
-        'ToolStripButton_FontFormat
-        '
-        Me.ToolStripButton_FontFormat.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton_FontFormat.Image = Global.ExtendedRTFControlTest.My.Resources.Resources.Fontformat
-        Me.ToolStripButton_FontFormat.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton_FontFormat.Name = "ToolStripButton_FontFormat"
-        Me.ToolStripButton_FontFormat.Size = New System.Drawing.Size(23, 22)
-        Me.ToolStripButton_FontFormat.Text = "ToolStripButton_FontFormat"
-        Me.ToolStripButton_FontFormat.ToolTipText = "Schriftart für Markierung auswählen"
         '
         'FormMain
         '

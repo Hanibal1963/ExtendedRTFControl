@@ -7,7 +7,6 @@
 Public Class FormMain
 
     Public Sub New()
-
         ' Dieser Aufruf ist für den Designer erforderlich.
         Me.InitializeComponent()
         ' Fügen Sie Initialisierungen nach dem InitializeComponent()-Aufruf hinzu.
@@ -92,6 +91,17 @@ Public Class FormMain
             colorDialog.Color = Me.ExtendedRTF.SelectionBackColor
             If colorDialog.ShowDialog(Me) = DialogResult.OK Then
                 Me.ExtendedRTF.SelectionBackColor = colorDialog.Color
+            End If
+        End Using
+    End Sub
+
+    Private Sub ToolStripButton_FontFormat_Click(sender As Object, e As EventArgs) Handles ToolStripButton_FontFormat.Click
+        ' Schriftart für markierten Text auswählen
+        ' Der Dialog wird mit der aktuellen Schriftart der Auswahl vorbelegt.
+        Using fontDialog As New FontDialog()
+            fontDialog.Font = Me.ExtendedRTF.SelectionFont
+            If fontDialog.ShowDialog(Me) = DialogResult.OK Then
+                Me.ExtendedRTF.SelectionFont = fontDialog.Font
             End If
         End Using
     End Sub
@@ -189,22 +199,22 @@ Public Class FormMain
 
     ' Synchronisiert den Checked-Status für Durchstreichung (Strikeout).
     Private Sub SetStrikeoutCheckedState()
-        Me.ToolStripButton_Strikeout.Checked = CBool(Me.ExtendedRTF.SelectionStrikeout)
+        Me.ToolStripButton_Strikeout.Checked = Me.ExtendedRTF.SelectionStrikeout.GetValueOrDefault(False)
     End Sub
 
     ' Synchronisiert den Checked-Status für Unterstreichung (Underline).
     Private Sub SetUnderlineCheckedState()
-        Me.ToolStripButton_UnderLine.Checked = CBool(Me.ExtendedRTF.SelectionUnderline)
+        Me.ToolStripButton_UnderLine.Checked = Me.ExtendedRTF.SelectionUnderline.GetValueOrDefault(False)
     End Sub
 
     ' Synchronisiert den Checked-Status für Kursivschrift (Italic).
     Private Sub SetItalicCheckedState()
-        Me.ToolStripButton_Italic.Checked = CBool(Me.ExtendedRTF.SelectionItalic)
+        Me.ToolStripButton_Italic.Checked = Me.ExtendedRTF.SelectionItalic.GetValueOrDefault(False)
     End Sub
 
     ' Synchronisiert den Checked-Status für Fettschrift (Bold).
     Private Sub SetBoldCheckedState()
-        Me.ToolStripButton_Bold.Checked = CBool(Me.ExtendedRTF.SelectionBold)
+        Me.ToolStripButton_Bold.Checked = Me.ExtendedRTF.SelectionBold.GetValueOrDefault(False)
     End Sub
 
 End Class

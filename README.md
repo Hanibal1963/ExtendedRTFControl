@@ -15,6 +15,18 @@ Eine erweiterte RichTextBox mit bequemen Formatierungs- und Abfrage-Hilfen für A
 
 ## Methoden
 
+- **ClearFormatting** - Entfernt Formatierungen (Schriftstil, Vorder-/Hintergrundfarbe, Bullet-Aufzählung) vollständig aus aktueller Auswahl oder ohne Auswahl ab der Caret-Position.
+- **SetSelectionAlignment** - Setzt die horizontale Ausrichtung der aktuellen Absatz-/Absatzauswahl.
+- **ToggleBold** - Schaltet Fettdruck für aktuelle Auswahl bzw. Caret um.
+- **ToggleItalic** - Schaltet Kursiv für aktuelle Auswahl bzw. Caret um.
+- **ToggleUnderline** - Schaltet Unterstreichung für aktuelle Auswahl bzw. Caret um.
+- **ToggleStrikeout** - Schaltet Durchstreichung für aktuelle Auswahl bzw. Caret um.
+- **ToggleBullet** - Schaltet Bullet-Aufzählung für aktuelle Absatz-/Absatzauswahl um.  
+
 ## Ereignisse
 
 ## Versionsinformationen
+
+**1.2026.0507 (07.05.2026)**
+
+- Erste öffentliche Version.
