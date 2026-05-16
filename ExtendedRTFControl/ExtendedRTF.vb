@@ -39,7 +39,7 @@ Namespace ExtendedRTFControl
     ''' nutzen Sie nach Möglichkeit Batch-Blöcke.</para>
     ''' </remarks>
     <ProvideToolboxControlAttribute("SchlumpfSoft Controls", False)>
-    <System.ComponentModel.Description("Control zum Anzeigen von animierten Grafiken.")>
+    <System.ComponentModel.Description("Erweiterte RichTextBox mit bequemen Formatierungs- und Abfrage-Hilfen für Auswahl und Caret (u.a. Schriftgröße, Stil-Flags, Vorder-/Hintergrundfarbe, Absatz-Einzüge, Ausrichtung) sowie Batch-Updates über Redraw-Suppression.")>
     <System.ComponentModel.ToolboxItem(True)>
     <System.Drawing.ToolboxBitmap(GetType(ExtendedRTF), "ExtendedRTF.bmp")>
     Public Class ExtendedRTF
