@@ -14,7 +14,7 @@
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <AssemblyVersion>1.2026.0506.3</AssemblyVersion>
+    <AssemblyVersion>1.2026.0507.2</AssemblyVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -127,6 +127,60 @@
       <Project>{caa66c6d-a9f0-4d25-887a-058fedfd3126}</Project>
       <Name>ExtendedRTFControl</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Backcolor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delformat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fontdown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fontformat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fontup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Forecolor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Italic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LeftIndentDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LeftIndentUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Setdown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Setup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Strikeout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Textcenter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Textleft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Textright.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Togglebullets.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Underline.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
