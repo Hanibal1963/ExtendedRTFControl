@@ -27,6 +27,6 @@ Eine erweiterte RichTextBox mit bequemen Formatierungs- und Abfrage-Hilfen für A
 
 ## Versionsinformationen
 
-**1.2026.0507 (07.05.2026)**
+**1.2026.0507** (07.05.2026)
 
 - Erste öffentliche Version.
