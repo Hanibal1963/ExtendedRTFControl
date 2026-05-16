@@ -48,14 +48,15 @@ Partial Class FormMain
         '
         Me.TableLayoutPanel.ColumnCount = 1
         Me.TableLayoutPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel.Controls.Add(Me.ExtendedRTF, 0, 1)
         Me.TableLayoutPanel.Controls.Add(Me.ToolStrip, 0, 0)
+        Me.TableLayoutPanel.Controls.Add(Me.ExtendedRTF, 0, 2)
         Me.TableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel.Name = "TableLayoutPanel"
-        Me.TableLayoutPanel.RowCount = 2
+        Me.TableLayoutPanel.RowCount = 3
         Me.TableLayoutPanel.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.TableLayoutPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel.Size = New System.Drawing.Size(677, 389)
         Me.TableLayoutPanel.TabIndex = 1
         '
