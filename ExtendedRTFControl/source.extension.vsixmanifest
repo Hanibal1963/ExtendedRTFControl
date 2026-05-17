@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="ExtendedRTFControl.741c349f-fb68-425f-9989-f42074c68dd2" Version="1.2026.0507" Language="de-DE" Publisher="Andreas Sauer" />
+        <Identity Id="ExtendedRTFControl.741c349f-fb68-425f-9989-f42074c68dd2" Version="1.2026.0517" Language="de-DE" Publisher="Andreas Sauer" />
         <DisplayName>ExtendedRTFControl</DisplayName>
         <Description xml:space="preserve">Eine erweiterte RichTextBox mit bequemen Formatierungs- und Abfrage-Hilfen für Auswahl und Caret (u.a. Schriftgröße, Stil-Flags, Vorder-/Hintergrundfarbe, Absatz-Einzüge, Ausrichtung) sowie Batch-Updates über Redraw-Suppression.</Description>
+        <MoreInfo>https://github.com/Hanibal1963/ExtendedRTFControl</MoreInfo>
         <License>LICENSE.rtf</License>
-        <ReleaseNotes>ReleaseNotes.rtf</ReleaseNotes>
         <Icon>Icon.png</Icon>
+        <Tags>Control, Windows, Forms, RTF, Format, Bold, Font, Fontsize, Underline, Strikeout, Italic</Tags>
     </Metadata>
     <Installation>
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0, 18.0)">
