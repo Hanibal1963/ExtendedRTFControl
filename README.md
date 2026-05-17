@@ -27,6 +27,17 @@ Eine erweiterte RichTextBox mit bequemen Formatierungs- und Abfrage-Hilfen für A
 
 ## Versionsinformationen
 
-**1.2026.0507** (07.05.2026)
+### V1.2026.0517 (17.05.2026)
+
+Version 1.2026.0517 veröffentlicht
+
+- Assembly- und Paketversionsnummern aktualisiert
+- Datei `ReleaseNotes.rtf` aus Projekt entfernt
+- Neuer Link zu GitHub-Seite in `vsixmanifest` hinzugefügt
+- Tags in `vsixmanifest` ergänzt
+- `ComVisible` in Testanwendung auf `False` gesetzt
+- GUID-Eintrag aus Testanwendung entfernt
+
+### V1.2026.0507 (07.05.2026)
 
 - Erste öffentliche Version.
